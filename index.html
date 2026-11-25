@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUMIFLEX | Corporate</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f7fbfa;color:#17343b}
+header{background:white;padding:22px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e5eeeb}
+.logo{font-size:26px;font-weight:900;color:#16866f;letter-spacing:2px}
+nav a{margin:0 12px;text-decoration:none;color:#29434a;font-size:14px}
+button,.btn{background:#16866f;color:white;border:0;padding:14px 22px;border-radius:10px;text-decoration:none;cursor:pointer}
+.hero{padding:85px 7%;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center;background:linear-gradient(120deg,#f5fbf9,#e2f3ed)}
+.tag{color:#16866f;font-weight:bold;font-size:13px}
+h1{font-size:clamp(38px,5vw,65px);line-height:1.08;margin:22px 0}
+p{color:#667b7d;line-height:1.7;margin:15px 0}
+.visual{height:330px;border-radius:28px;background:linear-gradient(140deg,#d8eee6,#fff);display:grid;place-items:center}
+.visual strong{font-size:85px;color:#16866f;letter-spacing:8px}
+section{padding:65px 7%}
+h2{font-size:34px;margin-bottom:15px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
+.card{background:white;border:1px solid #e3ece8;border-radius:18px;padding:22px}
+.art{height:160px;border-radius:13px;background:#e5f3ee;display:grid;place-items:center;color:#16866f;font-size:32px;font-weight:bold}
+.card h3{margin-top:18px}
+.card button{margin-top:15px}
+.features{background:#eef7f4}
+.contact{background:#14363b;color:white;border-radius:22px;padding:35px}
+.contact p{color:#c4d8d3}
+footer{padding:30px 7%;color:#718080}
+@media(max-width:700px){
+nav{display:none}.hero{grid-template-columns:1fr;padding:55px 7%}
+.visual{height:230px}.grid{grid-template-columns:1fr}
+h2{font-size:28px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">LUMIFLEX</div>
+<nav><a href="#home">Bosh sahifa</a><a href="#about">Kompaniya</a><a href="#products">Mahsulotlar</a><a href="#contact">Aloqa</a></nav>
+</header>
+<main>
+<div class="hero" id="home">
+<div>
+<span class="tag">QUALITY • INNOVATION • TRUST</span>
+<h1>Kelajak uchun <span style="color:#16866f">aqlli tanlov.</span></h1>
+<p>LUMIFLEX — sifat, innovatsiya va ishonchni birlashtirgan zamonaviy kompaniya. Biz bilan yangi imkoniyatlarni kashf eting.</p>
+<a class="btn" href="#products">Mahsulotlarni ko‘rish</a>
+</div>
+<div class="visual"><strong>LF</strong></div>
+</div>
+<section id="about">
+<h2>Kompaniya haqida</h2>
+<p>LUMIFLEX — mijozlar uchun sifatli mahsulotlar va zamonaviy yechimlarni taklif qiluvchi kompaniya.</p>
+<div class="grid">
+<div class="card"><h3>Sifat</h3><p>Har bir mahsulotda sifat va ishonchlilikka e'tibor.</p></div>
+<div class="card"><h3>Innovatsiya</h3><p>Zamonaviy texnologiyalar va yangi yondashuvlar.</p></div>
+<div class="card"><h3>Ishonch</h3><p>Mijozlar bilan uzoq muddatli hamkorlik.</p></div>
+</div>
+</section>
+<section id="products" class="features">
+<h2>Mahsulotlar katalogi</h2>
+<div class="grid">
+<div class="card"><div class="art">LUMI</div><h3>Premium Series</h3><p>Premium mahsulotlar to‘plami.</p><button onclick="add('Premium Series')">Savatga qo‘shish</button></div>
+<div class="card"><div class="art">FLEX</div><h3>Flex Series</h3><p>Zamonaviy va qulay yechimlar.</p><button onclick="add('Flex Series')">Savatga qo‘shish</button></div>
+<div class="card"><div class="art">ECO</div><h3>Eco Line</h3><p>Samaradorlik va qulaylik.</p><button onclick="add('Eco Line')">Savatga qo‘shish</button></div>
+</div>
+</section>
+<section id="contact">
+<div class="contact">
+<h2>Biz bilan bog‘laning</h2>
+<p>Mahsulotlar va hamkorlik bo‘yicha bizga murojaat qiling.</p>
+<a class="btn" href="mailto:info@lumiflex.uz">Aloqa</a>
+</div>
+</section>
+</main>
+<footer>© 2026 LUMIFLEX. Barcha huquqlar himoyalangan.</footer>
+<script>
+let basket=[];
+function add(name){
+basket.push(name);
+alert(name+' savatga qo‘shildi. Savatdagi mahsulotlar: '+basket.length);
+}
+</script>
+</body>
+</html>
